@@ -59,9 +59,7 @@ async function train(model, data) {
     const TRAIN_DATA_SIZE = 6000;
     const TEST_DATA_SIZE = 1000;
     
-    // Get the training batches and resize them. Remember to put your code
-    // inside a tf.tidy() clause to clean up all the intermediate tensors.
-    // HINT: Take a look at the MNIST example.
+    
     const [trainXs, trainYs] = tf.tidy(() =>{
         const d = data.nextTrainBatch(TRAIN_DATA_SIZE);
         return [
