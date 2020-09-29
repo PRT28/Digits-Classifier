@@ -1,1 +1,0 @@
-# Fashion-Sketch-Classifier--AI
